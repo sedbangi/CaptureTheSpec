@@ -330,7 +330,7 @@ rule voteForTransactionDoesNotAffectThirdParty(env e){
 
 /* ############ EXECUTE TRANSACTION RULES ############## */
 
-rule executeTransactionFrontrun(env e, env e2, calldataarg args){
+rule anyoneCanCallExecuteTransaction(env e, env e2, calldataarg args){
     allInvariants();
 
     require (e.msg.value == e2.msg.value);
