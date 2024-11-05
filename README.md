@@ -1,6 +1,6 @@
 # Capture the Spec
 
-Welcome to the **Capture the Spec** contest! This event is challenges participants to demonstrate their Solidity and formal verification skills in a fun environment using the Certora Prover.
+Welcome to the **Capture the Spec** contest! This event challenges participants to demonstrate their Solidity and formal verification skills in a fun environment using the Certora Prover.
 
 ## Table of Contents
 - [Contest Overview](#contest-overview)
