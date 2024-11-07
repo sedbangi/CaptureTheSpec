@@ -32,9 +32,9 @@ The contest will take place during DSS from **November 7 to November 9**.
 ## How to Participate
 
 1. **Read the Documentation**: Familiarize yourself with the [Certora Verification Language](https://docs.certora.com/).
-2. **Set Up Your Environment**: Prepare your development environment to write and verify Solidity contracts using the Certora Prover.  pip3 install certora-cli
+2. **Set Up Your Environment**: Prepare your development environment to write and verify Solidity contracts using the Certora Prover.  `pip3 install certora-cli`
 3. **Develop Your Contract**: Create a Solidity contract that meets all specified rules and invariants.
-4. **Run the Prover**: Use the provided `run.conf` file to run the Certora Prover and verify your contract. certoraRun runRules.conf  or certoraRun RunInvariants.conf
+4. **Run the Prover**: Use the provided `run.conf` file to run the Certora Prover and verify your contract. `certoraRun runRules.conf`  or `certoraRun RunInvariants.conf`
 
 ## Submission Guidelines
 
