@@ -36,7 +36,7 @@ The contest will take place during DSS from **November 7 to November 9**.
 2. **Set Up Your Environment**: Prepare your development environment to write and verify Solidity contracts using the Certora Prover.  install - https://docs.certora.com/en/latest/docs/user-guide/install.html
 3. **Read the Documentation**: Familiarize yourself with the [Certora Verification Language](https://docs.certora.com/).
 4. **Develop Your Contract**: Create a Solidity contract that meets all specified rules and invariants.
-5. **Run the Prover**: Use the provided `run.conf` file to run the Certora Prover and verify your contract. `certoraRun runRules.conf`  or `certoraRun RunInvariants.conf`. if you get `Unrecognized option: -havocInitEVMMemory` just `pip uninstall certora-cli` and `pip install certora-cli-beta` .
+5. **Run the Prover**: Use the provided `run.conf` file to run the Certora Prover and verify your contract. `certoraRun runRules.conf`  or `certoraRun RunInvariants.conf`. If you get `Unrecognized option: -havocInitEVMMemory` just `pip uninstall certora-cli` and `pip install certora-cli-beta` and start again.
 
 ## Submission Guidelines
 
