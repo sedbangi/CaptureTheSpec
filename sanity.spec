@@ -8,11 +8,14 @@ rule addValidatorSanity(env e, calldataarg args){
     addValidator(e, args);
 
     satisfy lengthBefore < currentContract.validators.length;
+    satisfy currentContract.validators.length == 4;
     satisfy !isValidatorBefore && currentContract.isValidator[a];
 }
 
 rule removeValidatorSanity(env e, calldataarg args){
     allInvariants();
+
+    uint256 lengthBefore = currentContract.validators.length;
     
     address a;
     bool isValidatorBefore = currentContract.isValidator[a];
@@ -23,6 +26,8 @@ rule removeValidatorSanity(env e, calldataarg args){
     removeValidator(e, args);
 
     satisfy isValidatorBefore && !currentContract.isValidator[a];
+    satisfy lengthBefore > currentContract.validators.length;
+    satisfy currentContract.validators.length == 3;
     satisfy count - 1 == getConfirmationCount(transactionId);
     satisfy count == getConfirmationCount(transactionId);
 }
@@ -36,6 +41,8 @@ rule executeTransactionSanity(env e){
     executeTransaction(e, transactionId);
 
     satisfy lengthBefore < currentContract.validators.length;
+    satisfy lengthBefore > currentContract.validators.length;
+    satisfy lengthBefore == currentContract.validators.length;
     satisfy currentContract.transactions[transactionId].executed && !isConfirmed(transactionId);
 }
 
@@ -48,7 +55,7 @@ rule voteForTransactionSanity(env e){
     bool isValidatorBefore = currentContract.isValidator[e.msg.sender];
     address destinationBefore = currentContract.transactions[transactionId].destination;
     uint256 confirmationCountBefore = getConfirmationCount(transactionId);
-     bool isConfirmedBefore = isConfirmed(transactionId);
+    bool isConfirmedBefore = isConfirmed(transactionId);
     bool isExecutedBefore = currentContract.transactions[transactionId].executed;
 
     voteForTransaction(e, transactionId);

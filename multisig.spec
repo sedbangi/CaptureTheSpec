@@ -223,12 +223,14 @@ rule createTransactionIntegrity(env e, calldataarg args){
     bool transactionExistsBefore = transactionExists(transactionId);
 
     createTransaction(e, transactionId, destination, value, data, hasReward);
-
+    assert currentContract.transactionIds.length > 0;
+    uint256 lastIdIndex = require_uint256(currentContract.transactionIds.length - 1);
     assert !transactionExistsBefore => transactionExists(transactionId) ;
     assert e.msg.value >= value && (hasReward => e.msg.value >= value + FEE());
     assert currentContract.pendingRewardsPot == (hasReward ? pendingRewardsPotBefore + FEE() : pendingRewardsPotBefore);
     assert currentContract.transactionsTotalValue == totalValueBefore + value;
     assert tick() == currentContract.transactionsTick[transactionId] + 1; 
+    assert currentContract.transactionIds[lastIdIndex] == transactionId;
 
 }
 

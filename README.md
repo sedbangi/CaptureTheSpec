@@ -20,6 +20,9 @@ The specification is divided into three parts:
 2. **invariant.spec**: Demonstrates inductive properties of the contract.
 3. **sanity.spec**: Outlines rules that show legal paths of the contract.
 
+If you want to run specific rule use `--rule rule_name` in your terminal
+
+
 The contest will take place during DSS from **November 7 to November 9**.
 
 ## Rules
