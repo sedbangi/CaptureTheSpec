@@ -49,9 +49,9 @@ Submissions must be made via a Google Form. Include the link to your verificatio
 
 - **1st, 2nd, and 3rd Place**: $1000 each for the three fastest participants/teams who successfully write a contract that verifies all rules. If no one can verify all rules and invariants, the top 3 submissions based on partial verification will win.
 - **Bonus Prize**: An additional $500 will be awarded to the three fastest participants who achieve low live statistics on the following specific rules:
-  - Rule 1: [Placeholder for Rule Name]
-  - Rule 2: [Placeholder for Rule Name]
-  - Rule 3: [Placeholder for Rule Name]
+  - Rule 1: voteForTransactionIntegrity
+  - Rule 2: tickCannotDecrease on voteForTransaction
+  - Rule 3: transactionExist_IFF_notInFuture on voteForTransaction
 
 For any questions or concerns, please reach out to us at [contest-email@certora.com](mailto:contest-email@certora.com) or at TG https://t.me/+TTuWSF6xfqRjNjY0
 ---
