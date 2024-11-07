@@ -40,7 +40,7 @@ The contest will take place during DSS from **November 7 to November 9**.
 
 ## Submission Guidelines
 
-Submissions must be made via a Google Form. Include the link to your verification run of the Certora Prover in your submission. The form can be found here: [Google Form Link Placeholder].
+Submissions must be made via a Google Form. Include the link to your verification run of the Certora Prover in your submission. The form can be found here: https://docs.google.com/forms/d/1E1rAeObKEukKsadr2EBTG3P1Y0XuG5IMiyr5dpB35i0/edit?ts=6729db0b.
 
 ## Prizes
 
@@ -49,8 +49,6 @@ Submissions must be made via a Google Form. Include the link to your verificatio
   - Rule 1: [Placeholder for Rule Name]
   - Rule 2: [Placeholder for Rule Name]
   - Rule 3: [Placeholder for Rule Name]
-
-## Contact
 
 For any questions or concerns, please reach out to us at [contest-email@certora.com](mailto:contest-email@certora.com) or at TG https://t.me/+TTuWSF6xfqRjNjY0
 ---
