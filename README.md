@@ -52,8 +52,7 @@ Submissions must be made via a Google Form. Include the link to your verificatio
 
 ## Contact
 
-For any questions or concerns, please reach out to us at [contest-email@certora.com](mailto:contest-email@certora.com).
-
+For any questions or concerns, please reach out to us at [contest-email@certora.com](mailto:contest-email@certora.com) or at TG https://t.me/+TTuWSF6xfqRjNjY0
 ---
 
 Good luck, and may the best team win!
