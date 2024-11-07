@@ -5,11 +5,6 @@
 *  We assume the invariant before the execution of one step, and prove it still holds after, i.e. the invariant is inductive. 
 *  Preserved{} Blocks: The proof of some invariants might depend on others. To this end, we use the preserved{} block requiring all other invariants. This is logically sound given that each invariant is proved. For simplicity of the spec, we simply require all invariants if at least one is needed. 
 */
-methods
-{
-    function getDataOfTransaction(bytes32) external returns (bytes memory) envfree;
-    function getConfirmationCount(bytes32) external returns (uint256) envfree;
-}
 
 function allInvariants(){
     requireInvariant validatorUniqueness();
